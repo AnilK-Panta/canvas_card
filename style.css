@@ -1,0 +1,16 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#canvas{
+    display: flex;
+    margin: auto;
+    background-color: rgb(204, 204, 204);
+    box-shadow: -1px -1px 35px -1px rgba(0,0,0,0.54);
+    -webkit-box-shadow: -1px -1px 35px -1px rgba(0,0,0,0.54);
+    -moz-box-shadow: -1px -1px 35px -1px rgba(0,0,0,0.54);
+}
+/* h1 #fname, #lname{
+    letter-spacing: 8px;
+} */

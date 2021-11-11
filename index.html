@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=KoHo:wght@500&display=swap');
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+    </style>
+    <style>
+        body{
+            background: #e0e0e0;
+        }
+        canvas {
+            box-shadow:  20px 20px 60px #bebebe,
+             -20px -20px 60px #ffffff;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+    <title>Edit Certificate</title>
+</head>
+
+<body>
+    <h1>Edit Your Card</h1>
+    <h3>upload photo: <input type="file" id="lol" onchange="previewFile()"></h3>
+    <br>
+    <button type="button" id="plus" style="padding: 5px;">+</button>
+    <button type="button" id="minus" style="padding: 5px;">-</button>
+    <br><br>
+    <button type="button" id="left" style="padding: 5px;">left</button>
+    <button type="button" id="right" style="padding: 5px;">right</button>
+    <button type="button" id="up" style="padding: 5px;">up</button>
+    <button type="button" id="down" style="padding: 5px;">down</button>
+    <h3>upload logo: <input type="file" id="lol1" onchange="previewLogo()"></h3>
+    <br>
+    <button type="button" id="plus1" style="padding: 5px;">+</button>
+    <button type="button" id="minus1" style="padding: 5px;">-</button>
+    <br><br>
+    <button type="button" id="left1" style="padding: 5px;">left</button>
+    <button type="button" id="right1" style="padding: 5px;">right</button>
+    <button type="button" id="up1" style="padding: 5px;">up</button>
+    <button type="button" id="down1" style="padding: 5px;">down</button>
+    <!-- <img id="preview" height="200px" width="200px" > -->
+    <!-- <button onclick="setImage();">Set Image</button> -->
+    <br>
+    <h1>First Name: <input id="fname" type="text" autocomplete="off"></h1>
+    <h1>Last Name: <input id="lname" type="text" autocomplete="off"></h1>
+    <br>
+    <button type="button" id="spaceIn">space in</button>
+    <button type="button" id="spaceOut">space out</button>
+    <button type="button" id="letterSizeSmall">Size reduce</button>
+    <button type="button" id="letterSizeBig">Size Expand</button>
+    <br><br>
+    <p>position: <input id="position" type="text" autocomplete="off"></p>
+    <br>
+    <p>address Name: <input id="add1" type="text" autocomplete="off"></p>
+    <p>mobile No: <input id="add2" type="number" autocomplete="off"></p>
+    <p>Landline No: <input id="add3" type="number" autocomplete="off"></p>
+    <p>Website: <input id="add4" type="text" autocomplete="off"></p>
+    <button type="button" id="spaceIn1">space in</button>
+    <button type="button" id="spaceOut1">space out</button>
+    <button type="button" id="letterSizeSmall1">Size reduce</button>
+    <button type="button" id="letterSizeBig1">Size Expand</button>
+    <br><br>
+    <details>
+        <summary>fonts</summary>
+        <button id='font1'>Montserrat</button><br>
+        <button id='font2'>Roboto</button><br>
+        <button id='font3'>KoHo</button>
+    </details>
+    <br>
+
+    <br><br>
+    <!-- <button type="button" id="btnDownload">Download</button> -->
+    <br>
+
+    <canvas id="front-canvas" width="700px" height="400px" style="position: absolute; right: 30px; top: 30px;">
+    </canvas>
+    <canvas id="back-canvas" width="700px" height="400px" style="position: absolute; right: 30px; top: 460px;">
+    </canvas>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
